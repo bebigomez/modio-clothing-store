@@ -1,0 +1,105 @@
+{
+  "products": [
+    {
+      "name": "U AIRism Cotton Oversized Crew Neck Half-Sleeve T-Shirt",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 14.9,
+      "color": "Gray",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003290/U_AIRism_Cotton_Oversized_Crew_Neck_Half-Sleeve_T-Shirt_dm1rjf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003286/U_AIRism_Cotton_Oversized_Crew_Neck_Half-Sleeve_T-Shirt-2_eipois.avif"
+      ]
+    },
+    {
+      "name": "Smart Ankle Pants (Ultra Stretch, Tall)",
+      "category": "Pants",
+      "gender": "Men",
+      "price": 39.9,
+      "color": "Gray",
+      "size": "32",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003283/Smart_Ankle_Pants_Ultra_Stretch_Tall_envne7.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003279/Smart_Ankle_Pants_Ultra_Stretch_Tall_-2_uwp3c5.avif"
+      ]
+    },
+    {
+      "name": "Fighting Game Legends UT (Short-Sleeve Graphic T-Shirt) (Street Fighter)",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 14.9,
+      "color": "White",
+      "size": "S",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003275/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_df4oqy.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003271/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_-2_rdy35k.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003268/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_-3_lomazt.avif"
+      ]
+    },
+    {
+      "name": "Super Non-Iron Slim-Fit Shirt (Semi-Wide Collar)",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 29.9,
+      "color": "Light blue",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003264/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_jdycwo.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003260/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_-2_fw6n0s.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003257/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_-3_mriy96.avif"
+      ]
+    },
+    {
+      "name": "Washed Jersey Ankle Pants",
+      "category": "Pants",
+      "gender": "Men",
+      "price": 29.9,
+      "color": "Black",
+      "size": "L",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003253/Washed_Jersey_Ankle_Pants_r1zz43.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003253/Washed_Jersey_Ankle_Pants_r1zz43.avif"
+      ]
+    },
+    {
+      "name": "UT Archive UT (Short Sleeve Graphic T-Shirt) (Jean-Michel Basquiat)",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 9.9,
+      "color": "Yellow",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003242/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_dsaje2.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003239/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_-2_r2yusw.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003235/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_-3_tzzwj8.jpg"
+      ]
+    },
+    {
+      "name": "Super Non-Iron Striped Slim-Fit Shirt",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 29.9,
+      "color": "Blue",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003231/Super_Non-Iron_Striped_Slim-Fit_Shirt_zglisn.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003229/Super_Non-Iron_Striped_Slim-Fit_Shirt-2_cycvjg.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003305/Super_Non-Iron_Striped_Slim-Fit_Shirt-3_zrvjek.avif"
+      ]
+    },
+    {
+      "name": "HEATTECH Lined Stretch Gloves",
+      "category": "Accessories",
+      "gender": "Men",
+      "price": 19.9,
+      "color": "Gray",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003301/HEATTECH_Lined_Stretch_Gloves_stx15l.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003298/HEATTECH_Lined_Stretch_Gloves-2_pryzfa.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003294/HEATTECH_Lined_Stretch_Gloves-3_urob2o.avif"
+      ]
+    }
+  ]
+}
