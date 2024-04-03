@@ -1,23 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useParams, useLocation } from 'react-router-dom';
 
 const ItemsGrid = ({ items }) => {
-  const [filter, setFilter] = useState(null);
+  const { section } = useParams();
+  const itemsByGender = items.filter((i) => i.gender === section[0].toUpperCase() + section.substring(1));
 
-  // Obtener todas las categorías únicas
-  const categories = [...new Set(items.map((item) => item.category))];
+  const [categoryFilter, setCategoryFilter] = useState(null);
+
+  const categories = [...new Set(itemsByGender.map((item) => item.category))];
 
   // Filtrar los elementos basados en el estado del filtro
-  const filteredItems = filter
-    ? items.filter((item) => item.category === filter)
-    : items;
+  const filteredItems = categoryFilter
+    ? itemsByGender.filter((item) => item.category === categoryFilter)
+    : itemsByGender; // Utilizar itemsByGender en lugar de items
+
+  // Obtener la ubicación actual para detectar cambios de ruta
+  const location = useLocation();
+
+  // Restablecer el filtro cuando cambie la ruta
+  useEffect(() => {
+    setCategoryFilter(null);
+  }, [location.pathname]);
 
   return (
     <div>
       <div>
         <button
           className="p-2 mr-1 bg-blue-400 rounded"
-          onClick={() => setFilter(null)}
+          onClick={() => setCategoryFilter(null)}
         >
           Mostrar Todos
         </button>
@@ -25,7 +35,7 @@ const ItemsGrid = ({ items }) => {
           <button
             className="p-2 mr-1 bg-blue-400 rounded"
             key={category}
-            onClick={() => setFilter(category)}
+            onClick={() => setCategoryFilter(category)}
           >
             {category}
           </button>

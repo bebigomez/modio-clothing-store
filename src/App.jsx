@@ -22,8 +22,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home items={items} />} />
-        <Route path="/women" element={<ItemsGrid items={items} />} />
-        <Route path="/men" element={<ItemsGrid items={items} />} />
+        <Route path="/:section" element={<ItemsGrid items={items} />} />
         <Route
           path="/women/:id"
           element={<ProductDetails items={items} />}

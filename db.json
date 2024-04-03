@@ -100,6 +100,126 @@
         "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003298/HEATTECH_Lined_Stretch_Gloves-2_pryzfa.avif",
         "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003294/HEATTECH_Lined_Stretch_Gloves-3_urob2o.avif"
       ]
+    },
+    {
+      "name": "AIRism Cotton Short-Sleeve T-Shirt",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 14.9,
+      "color": "Light gray",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt_dfeavd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt-2_jgqkih.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155087/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt-3_ox5qaq.avif"
+      ]
+    },
+    {
+      "name": "Rayon Printed Long-Sleeve Blouse",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 29.9,
+      "color": "Black",
+      "size": "S",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse_z7qbcj.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse-2_ccg5qi.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse-3_u4cnwr.avif"
+      ]
+    },
+    {
+      "name": "Rayon Skipper Collar 3/4 Sleeve Blouse",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 29.9,
+      "color": "Navy",
+      "size": "S",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse_set2zl.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse-2_poilz9.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse-3_nz0ih7.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Short-Sleeve Mini Dress",
+      "category": "Dresses",
+      "gender": "Women",
+      "price": 19.9,
+      "color": "Gray",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress_sb5ja3.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress-2_nhvnux.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress-3_l2murv.avif"
+      ]
+    },
+    {
+      "name": "Ultra Stretch AIRism Sleeveless Dress",
+      "category": "Dresses",
+      "gender": "Women",
+      "price": 29.9,
+      "color": "Navy",
+      "size": "S",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Ultra_Stretch_AIRism_Sleeveless_Dress-2_fjemic.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Ultra_Stretch_AIRism_Sleeveless_Dress_yq2bts.avif"
+      ]
+    },
+    {
+      "name": "Wide Straight Cargo Pants",
+      "category": "Bottoms",
+      "gender": "Women",
+      "price": 39.9,
+      "color": "Natural",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Wide_Straight_Cargo_Pants_h7ooek.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Wide_Straight_Cargo_Pants-2_isx7fo.avif"
+      ]
+    },
+    {
+      "name": "Denim Wide Straight Cargo Pants (Tall)",
+      "category": "Bottoms",
+      "gender": "Women",
+      "price": 39.9,
+      "color": "Blue",
+      "size": "M",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_dzduud.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_-2_ge6t7a.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_-3_ynf39t.avif"
+      ]
+    },
+    {
+      "name": "Pocketable UV Protection Parka",
+      "category": "Outerwear",
+      "gender": "Women",
+      "price": 39.9,
+      "color": "Light Blue",
+      "size": "S",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155089/modio/women/Pocketable_UV_Protection_Parka_vtfmnf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/Pocketable_UV_Protection_Parka-2_ajzafe.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155089/modio/women/Pocketable_UV_Protection_Parka-3_poj2jp.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Crew Neck Striped Short-Sleeve T-Shirt",
+      "category": "Short-Sleeve",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Pink",
+      "size": "Kids 7-8Y (130)",
+      "images": []
+    },
+    {
+      "name": "AIRism Cotton Striped Crew Neck T-Shirt",
+      "category": "Short-Sleeve",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Navy",
+      "size": "Kids 7-8Y (130)",
+      "images": []
     }
   ]
 }
