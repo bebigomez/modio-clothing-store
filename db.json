@@ -210,7 +210,11 @@
       "price": 14.9,
       "color": "Pink",
       "size": "Kids 7-8Y (130)",
-      "images": []
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181068/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt_c1ycgd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181065/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt-2_ffcvdg.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181061/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt-3_ogdywj.avif"
+      ]
     },
     {
       "name": "AIRism Cotton Striped Crew Neck T-Shirt",
@@ -219,7 +223,88 @@
       "price": 14.9,
       "color": "Navy",
       "size": "Kids 7-8Y (130)",
-      "images": []
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181058/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt_fimszf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181054/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt-2_wq3941.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181050/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt-3_nfossg.avif"
+      ]
+    },
+    {
+      "name": "Dry Pique Striped Polo Shirt",
+      "category": "Polo shirts",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Natural",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181047/modio/kids/Dry_Pique_Striped_Polo_Shirt_bol5gh.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181043/modio/kids/Dry_Pique_Striped_Polo_Shirt-2_idskzb.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181040/modio/kids/Dry_Pique_Striped_Polo_Shirt-3_aqsm1g.avif"
+      ]
+    },
+    {
+      "name": "Dry Pique Printed Polo Shirt",
+      "category": "Polo shirts",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Navy",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181036/modio/kids/Dry_Pique_Printed_Polo_Shirt_jwedts.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181034/modio/kids/Dry_Pique_Printed_Polo_Shirt-2_ofycwf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180934/modio/kids/Dry_Pique_Printed_Polo_Shirt-3_twwwso.avif"
+      ]
+    },
+    {
+      "name": "Minecraft UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Blue",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180883/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_eb1mu1.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180874/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_-2_qyogyq.jpg",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180864/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_-3_rnreme.avif"
+      ]
+    },
+    {
+      "name": "LEGO® UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Black",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180861/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_fplm4i.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180806/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_-2_wc3vxd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180797/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_-3_onpws6.avif"
+      ]
+    },
+    {
+      "name": "LEGO® UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "White",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180793/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_zde4t2.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180788/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_-2_j41mvt.jpg",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180790/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_-3_dfjiu3.avif"
+      ]
+    },
+    {
+      "name": "Soft Brushed Striped Crew Neck Long-Sleeve T-Shirt",
+      "category": "Long-Sleeve",
+      "gender": "Kids",
+      "price": 14.9,
+      "color": "Off white",
+      "size": "Kids 7-8Y (130)",
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181076/modio/kids/Soft_Brushed_Striped_Crew_Neck_Long-Sleeve_T-Shirt_ugnast.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181072/modio/kids/Soft_Brushed_Striped_Crew_Neck_Long-Sleeve_T-Shirt-2_f0toer.avif"
+      ]
     }
   ]
 }
