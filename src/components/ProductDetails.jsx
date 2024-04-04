@@ -1,8 +1,12 @@
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { addItem } from '../reducers/cartReducer';
 
 const ProductDetails = ({ items }) => {
   const id = useParams().id;
   const item = items.find((i) => i.id === id);
+
+  const dispatch = useDispatch()
 
   return (
     <section className="flex flex-row h-screen">
@@ -28,7 +32,7 @@ const ProductDetails = ({ items }) => {
           <option value="saab">M</option>
           <option value="mercedes">L</option>
         </select>
-        <button className="bg-gray-800 text-white py-2 px-4 rounded">
+        <button className="bg-gray-800 text-white py-2 px-4 rounded" onClick={() => {dispatch(addItem(item))}}>
           Add to cart
         </button>
       </div>

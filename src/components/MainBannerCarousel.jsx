@@ -7,18 +7,29 @@ import { useState } from 'react';
 //     const newIndex = index - 1;
 //    setIndex(newIndex < 0 ? length - 1 : newIndex);
 //   };
-  
+
 //   const handleNext = () => {
 //     const newIndex = index + 1;
 //     setIndex(newIndex >= length ? 0 : newIndex);
 //   };
 
 const Carousel = () => {
-
   const banners = [
-    { imageUrl: '/men.jpg', altText: 'Texto alternativo 1' },
-    { imageUrl: '/women.jpg', altText: 'Texto alternativo 2' },
-    { imageUrl: '/kids.jpg', altText: 'Texto alternativo 3' },
+    {
+      imageUrl:
+        'https://res.cloudinary.com/dxvt08dc2/image/upload/v1712182294/modio/banners/men-banner_v7ycgs.jpg',
+      altText: 'Texto alternativo 1',
+    },
+    {
+      imageUrl:
+        'https://res.cloudinary.com/dxvt08dc2/image/upload/v1712182294/modio/banners/women-banner_wqafpc.jpg',
+      altText: 'Texto alternativo 2',
+    },
+    {
+      imageUrl:
+        'https://res.cloudinary.com/dxvt08dc2/image/upload/v1712182043/modio/banners/kids-banner_eabrfm.jpg',
+      altText: 'Texto alternativo 3',
+    },
   ];
 
   const [currentBanner, setCurrentBanner] = useState(0);
