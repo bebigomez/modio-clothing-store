@@ -13,7 +13,7 @@ const App = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('https://gist.githubusercontent.com/bebigomez/19a2a2a461051227d61e15ffd7738203/raw/0420534f81c28913fe14e60b155d6e2863603ac0/modioItems.json').then((response) => {
+    axios.get('https://gist.githubusercontent.com/bebigomez/19a2a2a461051227d61e15ffd7738203/raw/8b7ed96545c502586a430b4aff6720d0a87c5900/modioItems.json').then((response) => {
       setItems(response.data);
     });
   }, []);
