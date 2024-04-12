@@ -1,49 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Carousel = ({ items }) => {
-  const [startIndex, setStartIndex] = useState(0);
+const FavoriteItems = ({ items }) => {
+  function shuffle(array) {
+    let currentIndex = array.length;
 
-  const nextSlide = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === items.length - 5 ? 0 : prevIndex + 1
-    );
-  };
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+      // Pick a remaining element...
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
 
-  const prevSlide = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 5 : prevIndex - 1
-    );
-  };
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
+    }
+    return array;
+  }
+
+  const favoriteItems = shuffle(items).slice(0, 8);
 
   return (
-    <div className="carousel-container flex items-center justify-center mt-10">
-      <button
-        className="prev-btn bg-gray-300 px-2 py-1 rounded"
-        onClick={prevSlide}
-      >
-        Prev
-      </button>
-      <div className="carousel overflow-hidden mx-4">
-        <div className="carousel-inner flex space-x-4">
-          {items.slice(startIndex, startIndex + 5).map((item, index) => (
-            <div key={index} className='border border-gray-300 rounded bg-red-500 h-80 w-60'>
-              <>
-              <img src={item.images[0]}></img>
-              <p>{item.name}</p>
-              <p>{item.price}</p>
-              </>
+    <section className="m-2 md:m-6">
+      <h3 className="text-2xl md:text-3xl font-roboto-condensed font-semibold mb-10 text-center">
+        {"People's Favorite Items".toUpperCase()}
+      </h3>
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-8">
+        {favoriteItems.map((item) => {
+          return (
+            <div key={item.id} className="rounded-xl shadow-md">
+              <div>
+                <img className="mb-2 rounded-t-xl" src={item.images[0]}></img>
+              </div>
+              <div className="space-y-2 p-2">
+                <h3 className="text-base font-roboto-condensed font-semibold">
+                  {item.name}
+                </h3>
+                <p className="text-sm">${(item.price / 100).toFixed(2)}</p>
+              </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
-      <button
-        className="next-btn bg-gray-300 px-2 py-1 rounded"
-        onClick={nextSlide}
-      >
-        Next
-      </button>
-    </div>
+    </section>
   );
 };
 
-export default Carousel;
+export default FavoriteItems;

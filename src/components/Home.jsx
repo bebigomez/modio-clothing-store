@@ -1,10 +1,10 @@
-import MainBannerCarousel from './MainBannerCarousel';
+import MainBanner from './MainBanner';
 import FavoriteItems from './FavoriteItems';
 
 const Home = ({ items }) => {
   return (
     <>
-      <MainBannerCarousel />
+      <MainBanner />
       <FavoriteItems items={items} />
     </>
   );

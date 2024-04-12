@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'roboto-condensed': ["Roboto Condensed"],
+      'roboto': ["Roboto"],
+    },
     extend: {},
   },
   plugins: [],
