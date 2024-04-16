@@ -1,5 +1,6 @@
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteItem } from '../reducers/cartReducer';
+import { changeQuantity, deleteItem } from '../reducers/cartReducer';
 
 const Cart = () => {
   const items = useSelector((state) => state.cart);
@@ -7,10 +8,29 @@ const Cart = () => {
 
   let shippingCost = 500;
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCheckout = () => {
+    if (items.length < 1) {
+      alert('Your cart is currently empty.');
+      return;
+    }
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const getCartSubtotal = () => {
     let total = 0;
-    items.forEach((items) => (total += items.quantity * items.price));
+    items.forEach((item) => (total += item.quantity * item.price));
     return total;
+  };
+
+  const handleQuantityChange = (itemOrderId, event) => {
+    const newQuantity = parseInt(event.target.value);
+    dispatch(changeQuantity(itemOrderId, newQuantity));
   };
 
   return (
@@ -40,7 +60,19 @@ const Cart = () => {
               </p>
               <p className="text-sm md:base text-gray-600">Size: {item.size}</p>
               <p className="text-sm md:base text-gray-600">
-                Quantity: {item.quantity}
+                Quantity:
+                <select
+                  value={item.quantity}
+                  onChange={(event) =>
+                    handleQuantityChange(item.orderId, event)
+                  }
+                >
+                  {[...Array(10).keys()].map((num) => (
+                    <option key={num + 1} value={num + 1}>
+                      {num + 1}
+                    </option>
+                  ))}
+                </select>
               </p>
               <p className="text-sm md:base text-gray-600">
                 Subtotal: ${((item.price * item.quantity) / 100).toFixed(2)}
@@ -87,10 +119,59 @@ const Cart = () => {
             ${((getCartSubtotal() + shippingCost) / 100).toFixed(2)}
           </span>
         </div>
-        <button className="bg-black md:text-xl text-white py-2 px-4 rounded w-full">
+        <button
+          onClick={() => handleCheckout()}
+          className="bg-black md:text-xl text-white py-2 px-4 rounded w-full"
+        >
           Checkout
         </button>
       </div>
+
+      <dialog
+        open={isModalOpen}
+        onClose={handleCloseModal}
+        className="bg-slate-200 text-black p-5 md:p-10 rounded-xl"
+      >
+        <div className="flex justify-center mb-8">
+          <svg
+            className="w-12 h-12 text-green-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+        </div>
+
+        <h2 className="text-xl mb-4">
+          Payment confirmed successfully <br />
+          (just kidding, this is a fictional site)
+        </h2>
+        <p className="text-lg mb-4">Purchase Summary:</p>
+        <p>
+          • Subtotal: ${(getCartSubtotal() / 100).toFixed(2)} <br />• Shipping:
+          ${(shippingCost / 100).toFixed(2)} <br />• Total: $
+          {((getCartSubtotal() + shippingCost) / 100).toFixed(2)}
+        </p>
+        <p className="text-lg mt-4 mb-4">Thank you for your purchase!</p>
+        <div className="flex justify-end">
+          <button
+            onClick={handleCloseModal}
+            className="bg-black text-white px-4 py-2 rounded mt-4"
+          >
+            Close
+          </button>
+        </div>
+      </dialog>
     </section>
   );
 };

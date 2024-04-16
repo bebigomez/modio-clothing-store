@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FavoriteItems = ({ items }) => {
   function shuffle(array) {
@@ -34,9 +35,10 @@ const FavoriteItems = ({ items }) => {
                 <img className="mb-2 rounded-t-xl" src={item.images[0]}></img>
               </div>
               <div className="space-y-2 p-2">
-                <h3 className="text-base font-roboto-condensed font-semibold">
+                <Link
+                  to={`product/${item.id}`} className="text-base font-roboto-condensed font-semibold">
                   {item.name}
-                </h3>
+                </Link>
                 <p className="text-sm">${(item.price / 100).toFixed(2)}</p>
               </div>
             </div>

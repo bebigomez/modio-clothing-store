@@ -13,7 +13,7 @@ const App = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('https://gist.githubusercontent.com/bebigomez/19a2a2a461051227d61e15ffd7738203/raw/8b7ed96545c502586a430b4aff6720d0a87c5900/modioItems.json').then((response) => {
+    axios.get('https://gist.githubusercontent.com/bebigomez/19a2a2a461051227d61e15ffd7738203/raw/3795535b7bc56a2f89da21d6f1c35293463c53f5/modioItems.json').then((response) => {
       setItems(response.data);
     });
   }, []);
@@ -26,6 +26,8 @@ const App = () => {
         <Route path="/" element={<Home items={items} />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/:section" element={<ItemsGrid items={items} />} />
+        <Route path="/product/:id" element={<ProductDetails items={items} />} />
+        <Route path="/search/:id" element={<ProductDetails items={items} />} />
         <Route path="/women/:id" element={<ProductDetails items={items} />} />
         <Route path="/men/:id" element={<ProductDetails items={items} />} />
         <Route path="/kids/:id" element={<ProductDetails items={items} />} />

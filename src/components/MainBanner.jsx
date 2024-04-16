@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 const MainBanner = () => {
   const collections = [
     {
-      title: "Women's collection",
+      title: "Women",
+      buttonLabel: "Women's collection",
       description:
         "Empower your femininity with our diverse Women's Collection. From figure-flattering dresses to chic separates, discover luxury, sophistication, and individuality in every piece.",
       imageUrl:
@@ -9,7 +12,8 @@ const MainBanner = () => {
       altText: 'Two women smiling.',
     },
     {
-      title: "Men's collection",
+      title: "Men",
+      buttonLabel: "Men's collection",
       description:
         "Refined yet versatile, our Men's Collection offers timeless classics alongside contemporary essentials. From tailored suits to streetwear-inspired pieces, elevate your style effortlessly for any occasion.",
       imageUrl:
@@ -17,7 +21,8 @@ const MainBanner = () => {
       altText: 'Man smiling at camera.',
     },
     {
-      title: 'Kids collection',
+      title: 'Kids',
+      buttonLabel: 'Kids collection',
       description:
         "Inspire creativity and comfort with our playful Kids' Collection. From adorable onesies to trendy outfits, our durable and colorful designs ensure fun and fashion for every adventure.",
       imageUrl:
@@ -57,9 +62,9 @@ const MainBanner = () => {
                     {item.title}
                   </h3>
                   <p className="text-sm md:text-lg mb-2 md:mb-6">{item.description}</p>
-                  <button className="text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
+                  <Link to={`/${item.title}`} className="text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
                     Shop {item.title}
-                  </button>
+                  </Link>
                 </div>
               </div>
             );
