@@ -40,7 +40,7 @@ const MainBanner = () => {
           alt="A collection of colored shirts"
         ></img>
         <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-md p-4 rounded-2xl text-black text-2xl md:text-4xl font-bold">
-          Don't Miss Out on Online Deals!
+          Don&#39;t Miss Out on Online Deals!
           <br />
           <br />
           Shop now and enjoy 20% off your entire purchase.
@@ -61,7 +61,7 @@ const MainBanner = () => {
                   <h3 className="text-2xl font-roboto-condensed font-semibold mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-sm md:text-lg mb-2 md:mb-6">{item.description}</p>
+                  <p className="text-sm md:text-lg mb-4 md:mb-6">{item.description}</p>
                   <Link to={`/${item.title}`} className="text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
                     Shop {item.title}
                   </Link>
