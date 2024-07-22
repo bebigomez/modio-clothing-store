@@ -45,7 +45,7 @@ const ItemsGrid = ({ items }) => {
   return (
     <>
       {!query && ( // Renderizar solo si no hay consulta de búsqueda activa
-        <div className="text-center space-x-2 space-y-2 pt-16 mx-4">
+        <div className="text-center space-x-2 space-y-2 mx-4">
           <button
             className="border border-black px-1.5 py-1 rounded hover:bg-gray-300"
             onClick={() => setCategoryFilter(null)}
