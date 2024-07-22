@@ -1,40 +1,38 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { changeQuantity, deleteItem } from '../reducers/cartReducer';
+import { useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { changeQuantity, deleteItem } from "../reducers/cartReducer"
 
 const Cart = () => {
-  const items = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
+  const items = useSelector((state) => state.cart)
+  const dispatch = useDispatch()
 
-  let shippingCost = 500;
+  let shippingCost = 500
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleCheckout = () => {
     if (items.length < 1) {
-      alert('Your cart is currently empty.');
-      return;
+      alert("Your cart is currently empty.")
+      return
     }
-    setIsModalOpen(true);
-  };
+    setIsModalOpen(true)
+  }
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+    setIsModalOpen(false)
+  }
 
   const getCartSubtotal = () => {
-    let total = 0;
-    items.forEach((item) => (total += item.quantity * item.price));
-    return total;
-  };
+    return items.reduce((total, item) => total + item.quantity * item.price, 0);
+  }
 
   const handleQuantityChange = (itemOrderId, event) => {
-    const newQuantity = parseInt(event.target.value);
-    dispatch(changeQuantity(itemOrderId, newQuantity));
-  };
+    const newQuantity = parseInt(event.target.value)
+    dispatch(changeQuantity(itemOrderId, newQuantity))
+  }
 
   return (
-    <section className="grid md:grid-cols-2 translate-y-20">
+    <section className="grid md:grid-cols-2">
       <div className="p-4 rounded">
         <h2 className="text-2xl font-bold mb-4">Cart Items</h2>
 
@@ -111,7 +109,7 @@ const Cart = () => {
           <span className="text-gray-600">Shipping:</span>
           <span className="text-gray-800">
             ${(shippingCost / 100).toFixed(2)}
-          </span>{' '}
+          </span>{" "}
         </div>
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Total:</span>
@@ -173,7 +171,7 @@ const Cart = () => {
         </div>
       </dialog>
     </section>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart

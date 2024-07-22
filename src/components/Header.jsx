@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, ShoppingBag } from 'react-feather';
 import { useSelector } from 'react-redux';
@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full z-10 flex flex-col bg-white/50 backdrop-blur-md px-6 py-5 justify-center">
+    <header className="fixed w-full z-10 flex flex-col bg-white/50 backdrop-blur-md px-6 py-5 justify-center -translate-y-20">
       <div className="flex">
         <Link className="text-black font-bold text-md md:text-2xl" to={'/'}>
           <img src="/modio-logo.svg" style={{ height: '32px' }} alt="logo" />

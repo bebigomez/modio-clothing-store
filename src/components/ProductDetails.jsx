@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Importa useState
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { addItem } from '../reducers/cartReducer';
@@ -11,7 +11,7 @@ const ProductDetails = ({ items }) => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   return (
-    <section className="grid md:grid-cols-2 md:justify-center translate-y-20">
+    <section className="grid md:grid-cols-2 md:justify-center">
       <div className="bg-gray-500">
         <img src={item.images[0]} alt="Product" className="max-w-full" />
       </div>

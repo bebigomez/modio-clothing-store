@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const MainBanner = () => {
+const MainPage = () => {
   const collections = [
     {
       title: "Women",
@@ -40,7 +40,7 @@ const MainBanner = () => {
           alt="A collection of colored shirts"
         ></img>
         <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-md p-4 rounded-2xl text-black text-2xl md:text-4xl font-bold">
-          Don&#39;t Miss Out on Online Deals!
+          {"Don't Miss Out on Online Deals!"}
           <br />
           <br />
           Shop now and enjoy 20% off your entire purchase.
@@ -75,4 +75,4 @@ const MainBanner = () => {
   );
 };
 
-export default MainBanner;
+export default MainPage;

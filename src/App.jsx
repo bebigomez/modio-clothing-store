@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Cart from './components/Cart';
 import ItemsGrid from './components/ItemsGrid';
 import ProductDetails from './components/ProductDetails';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 const App = () => {
   const [items, setItems] = useState([]);

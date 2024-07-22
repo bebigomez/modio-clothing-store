@@ -1,4 +1,4 @@
-import MainBanner from './MainBanner';
+import MainBanner from './MainPage';
 import FavoriteItems from './FavoriteItems';
 
 const Home = ({ items }) => {
