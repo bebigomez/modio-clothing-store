@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
 import axios from "axios"
 
+import ScrollToTop from "./components/ScrollToTop"
 import Header from "./components/Header"
 import Home from "./components/Home"
 import Cart from "./components/Cart"
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Header items={items} />
 
       <Routes>

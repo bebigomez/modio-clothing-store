@@ -8,13 +8,12 @@ const cartReducer = (state = [], action) => {
 
       if (existingItem) {
         return state.map((item) =>
-          item.id === existingItem.id && item.size === existingItem.size
+          existingItem
             ? {
                 ...item,
                 quantity: item.quantity + 1,
-                orderId: Math.floor(Math.random() * 100),
               }
-            : { ...item, orderId: Math.floor(Math.random() * 100) }
+            : item
         )
       } else {
         return [

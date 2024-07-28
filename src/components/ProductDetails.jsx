@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { addItem } from '../reducers/cartReducer';
+import { formatPrice } from '../utils';
 
 const ProductDetails = ({ items }) => {
   const id = useParams().id;
@@ -20,7 +21,7 @@ const ProductDetails = ({ items }) => {
           {item.name}
         </h2>
         <p className="text-gray-900 md:text-2xl mb-2">Color: {item.color}</p>
-        <p className="text-gray-900 md:text-2xl mb-4">${(item.price / 100).toFixed(2)}</p>
+        <p className="text-gray-900 md:text-2xl mb-4">${formatPrice(item.price)}</p>
         <label htmlFor="size" className="text-gray-900 md:text-xl mb-2">
           Choose a size:
         </label>
@@ -28,7 +29,7 @@ const ProductDetails = ({ items }) => {
           name="size"
           id="size"
           className="mb-4 bg-gray-300 md:text-xl text-gray-900"
-          onChange={(e) => setSelectedSize(e.target.value)} // Maneja el cambio del tamaño seleccionado
+          onChange={(e) => setSelectedSize(e.target.value)}
         >
           {['Select a size', ...item.size].map((size) => {
             return (
