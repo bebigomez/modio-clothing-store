@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
+import ItemView from './ItemView';
 
 const ItemsGrid = ({ items }) => {
   const [itemsToRender, setItemsToRender] = useState(items);
@@ -68,24 +69,7 @@ const ItemsGrid = ({ items }) => {
         {itemsToRender.length > 0 ? (
           <div className="grid md:grid-cols-3 gap-4 pt-16">
             {itemsToRender.map((item) => (
-              <div key={item.id} className="p-4">
-                <Link to={`${item.id}`}>
-                  <img
-                    src={item.images[0]}
-                    alt={item.name}
-                    className="w-full mb-2 rounded-xl"
-                  />
-                </Link>
-                <Link
-                  to={`${item.id}`}
-                  className="text-gray-800 font-roboto-condensed font-bold md:text-2xl"
-                >
-                  {item.name}
-                </Link>
-                <div className="text-gray-800 font-roboto-condensed md:text-2xl">
-                  ${(item.price / 100).toFixed(2)}
-                </div>
-              </div>
+              <ItemView key={item.id} item={item} />
             ))}
           </div>
         ) : (
