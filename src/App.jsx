@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
-import axios from "axios"
+import { getAll } from "./services/items"
 
 import ScrollToTop from "./components/ScrollToTop"
 import Header from "./components/Header"
@@ -14,20 +14,14 @@ const App = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    axios
-      .get(
-        "https://gist.githubusercontent.com/bebigomez/19a2a2a461051227d61e15ffd7738203/raw/3795535b7bc56a2f89da21d6f1c35293463c53f5/modioItems.json"
-      )
-      .then((response) => {
-        setItems(response.data)
-      })
+    getAll().then((response) => {
+      setItems(response.data)
+    })
   }, [])
-
-  console.log(items)
 
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <Header items={items} />
 
       <Routes>
