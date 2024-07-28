@@ -37,7 +37,7 @@ const ItemsGrid = ({ items }) => {
         );
       }
     }
-  }, [location, section, categoryFilter]); // Only re-run effect if location.search or items change
+  }, [location, categoryFilter]); // Solo ejecutamos este bloque si location o categoryFilter cambia
 
   useEffect(() => {
     setCategoryFilter(null);
@@ -55,7 +55,7 @@ const ItemsGrid = ({ items }) => {
           </button>
           {categories.map((category) => (
             <button
-              className="mr-1 border border-black px-1.5 py-1 rounded hover:bg-gray-300"
+              className="border border-black px-1.5 py-1 rounded hover:bg-gray-300"
               key={category}
               onClick={() => setCategoryFilter(category)}
             >
@@ -67,7 +67,7 @@ const ItemsGrid = ({ items }) => {
 
       <div>
         {itemsToRender.length > 0 ? (
-          <div className="grid md:grid-cols-3 gap-4 pt-16">
+          <div className="grid md:grid-cols-3 gap-4 pt-8">
             {itemsToRender.map((item) => (
               <ItemView key={item.id} item={item} />
             ))}

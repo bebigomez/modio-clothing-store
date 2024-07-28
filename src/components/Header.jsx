@@ -11,6 +11,9 @@ const Header = () => {
   const cartItemsCount = useSelector((state) => state.cart.length);
 
   const handleSearchBar = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
     setSearchQuery(event.target.value);
   };
 
