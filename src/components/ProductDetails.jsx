@@ -11,6 +11,14 @@ const ProductDetails = ({ items }) => {
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState(null);
 
+  if (!item) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <p className="text-xl font-semibold text-gray-900">Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <section className="grid md:grid-cols-2 md:justify-center">
       <div className="bg-gray-500">

@@ -23,9 +23,11 @@ const App = () => {
       })
   }, [])
 
+  console.log(items)
+
   return (
     <>
-      <ScrollToTop />
+    <ScrollToTop />
       <Header items={items} />
 
       <Routes>
